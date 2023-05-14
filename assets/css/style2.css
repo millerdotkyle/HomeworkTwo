@@ -121,11 +121,11 @@ header {
 }
 
 article{
-    width: 50vw;
+    width: 50%;
 }
 
 
-.work-gallery {
+.work-gallery{
     padding: 5px;
     display: flex;
     display: inline-block;
@@ -176,13 +176,18 @@ article{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-direction: row; */
   /* align-items: center; */
   background-color: blueviolet;
 }
 
 .column {
   display: block;
+}
+
+.image-card {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* RESIZE IMG TO DIV */
@@ -198,7 +203,7 @@ article{
 
 /* POSITION AND STYLE TEXT */
 .image-text {
-    width: max-content;
+    width:fit-content;
     height: 100%;
     position: relative;
     /* justify-content: flex-start; */
@@ -215,7 +220,7 @@ article{
 }
 
 .image-text p {
-  /* display: block; */
+  position: relative;
   font-weight: 100;
   left: 20px;
   bottom: 10px;
